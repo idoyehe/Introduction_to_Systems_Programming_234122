@@ -1,0 +1,22 @@
+clear;
+../../mtm_escape -i test1.in -o myout1.out 2>myerr1.err
+../../mtm_escape -i test2.in -o myout2.out 2>myerr2.err
+../../mtm_escape -i test3.in -o myout3.out 2>myerr3.err
+../../mtm_escape -i test4.in -o myout4.out 2>myerr4.err
+../../mtm_escape -i test5.in -o myout5.out 2>myerr5.err
+../../mtm_escape -i test6.in -o myout6.out 2>myerr6.err
+../../mtm_escape -i test7.in -o myout7.out 2>myerr7.err
+diff test1.out myout1.out
+diff test2.out myout2.out
+diff test3.out myout3.out
+diff test4.out myout4.out
+diff test5.out myout5.out
+diff test6.out myout6.out
+diff test7.out myout7.out
+diff test1.err myerr1.err
+diff test2.err myerr2.err
+diff test3.err myerr3.err
+diff test4.err myerr4.err
+diff test5.err myerr5.err
+diff test6.err myerr6.err
+diff test7.err myerr7.err

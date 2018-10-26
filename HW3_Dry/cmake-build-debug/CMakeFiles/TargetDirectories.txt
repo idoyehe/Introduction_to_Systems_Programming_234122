@@ -1,0 +1,3 @@
+C:/Users/Ido/CLionProjects/HW3_Dry/cmake-build-debug/CMakeFiles/HW3_Dry.dir
+C:/Users/Ido/CLionProjects/HW3_Dry/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Ido/CLionProjects/HW3_Dry/cmake-build-debug/CMakeFiles/rebuild_cache.dir

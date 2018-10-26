@@ -1,0 +1,184 @@
+
+
+
+## day 0 ##
+
+escaper add escaper1@gmail.com 10 8
+
+####1 bad line - id does not exist
+escaper order escaper1@gmail.com 10 11 0-13 3
+
+company add bio1@gmail.com 10
+company add bio2@gmail.com 10
+company add bio3@gmail.com 10
+company add bio4@gmail.com 10
+company add med1@gmail.com 14
+company add med2@gmail.com 14
+company add med3@gmail.com 14
+company add med4@gmail.com 14
+
+####1 bad line - id does not exist
+escaper order escaper1@gmail.com 10 11 0-13 3
+
+room add bio1@gmail.com 11 100 3 06-18 7
+room add bio1@gmail.com 13 100 3 06-18 7
+room add bio1@gmail.com 12 100 3 06-18 7
+room add bio1@gmail.com 14 100 3 06-18 7
+
+room add med3@gmail.com 21 100 3 06-18 7
+room add med3@gmail.com 23 100 3 06-18 7
+room add med3@gmail.com 22 100 3 06-18 7
+room add med3@gmail.com 11 100 3 06-18 7
+
+####9 bad lines - invalid parameters
+company add med2@gmail.com -14
+company add med3@gmail.com 100
+company add med3gmail.com 100
+room add bio1@gmail.com 14 100 3 18-18 7
+room add bio1@gmail.com -14 100 3 06-18 7
+room add bio1@gmail.com 14 101 3 06-18 7
+room add bio1@gmail.com 14 100 3 06-18 0
+room add bio1@gmail.com 14 100 3 06-18 14
+room add bio1gmail.com 14 100 3 06-18 6
+
+####2 bad lines - email exist
+company add med2@gmail.com 14
+escaper add bio4@gmail.com 13 8
+
+####1 bad line - id exist
+room add med3@gmail.com 21 100 3 06-18 7
+
+####1 bad line - email does not exist
+room add med8@gmail.com 100 100 3 06-18 7
+
+escaper add escaper2@gmail.com 10 5
+escaper add escaper3@gmail.com 10 6
+escaper add escaper4@gmail.com 10 8
+
+####3 bad lines - invalid parameters
+escaper add escaper1@gmail.com 10 -8
+escaper add escaper1@gmail.com -10 8
+escaper add escaper1gmail.com 10 -8
+
+####1 bad line - email exist
+escaper add escaper3@gmail.com 10 8
+
+company remove bio4@gmail.com
+escaper order escaper2@gmail.com 10 11 0-12 3
+
+####1 bad line - invalid parameters
+company remove biogmail.com
+
+####2 bad lines - email does not exist 
+company remove bio@gmail.com
+company remove bio4@gmail.com
+
+####1 bad line - reservation exists
+company remove bio1@gmail.com
+
+report day
+report best
+
+## day 1 ##
+
+escaper order escaper2@gmail.com 10 11 0-13 3
+escaper order escaper2@gmail.com 10 11 0-14 3
+escaper order escaper2@gmail.com 10 11 1-13 3
+escaper order escaper2@gmail.com 10 11 2-13 3
+
+####2 bad lines - invalid parameters
+escaper order escaper2gmail.com 10 11 0-13 3
+escaper order escaper2@gmail.com -10 11 0-13 3
+escaper order escaper2@gmail.com 10 -11 0-13 3
+escaper order escaper2@gmail.com 10 11 0-33 3
+escaper order escaper2@gmail.com 10 11 0-13 20
+
+####1 bad line - escaper in room
+escaper order escaper2@gmail.com 10 12 0-13 3
+
+####3 bad line - room not available
+escaper order escaper1@gmail.com 10 12 0-05 3
+escaper order escaper1@gmail.com 10 12 0-20 3
+escaper order escaper1@gmail.com 10 11 0-03 3
+
+####1 bad line - email does not exist
+escaper order escaper50@gmail.com 10 11 2-13 3
+
+####2 bad lines - id does not exist
+escaper order escaper1@gmail.com 10 111 2-13 3
+escaper order escaper1@gmail.com 12 11 2-13 3
+
+report day
+report best
+
+
+## day 2 ##
+
+room add bio3@gmail.com 33 100 3 18-18 7
+escaper order escaper2@gmail.com 10 33 1-13 3
+escaper order escaper2@gmail.com 14 11 0-14 3
+
+escaper recommend escaper2@gmail.com 3
+
+####2 bad lines - invalid parameters
+escaper recommend escaper2gmail.com 3
+escaper recommend escaper2@gmail.com -3
+
+####1 bad line - client email does not exist
+escaper order escaper8@gmail.com 10 11 0-13 3
+
+report day
+
+## day 3 ##
+
+####1 bad line - reservation exists
+company remove bio3@gmail.com
+report day
+
+## day 4 ##
+
+company remove bio3@gmail.com
+
+####1 bad line - invalid parameters
+company remove bio1gmail.com
+
+####1 bad line - company email does not exist
+company remove bio3@gmail.com
+
+escaper order escaper2@gmail.com 14 22 0-14 3
+
+####2 bad lines - invalid parameters
+remove room -14 11
+remove room -14 -1
+
+####2 bad lines - id does not exist
+remove room 14 33
+remove room 10 22
+remove room 9 11
+
+####1 bad lines - reservation exist
+remove room 14 22
+
+report day
+
+## day 5 ##
+
+remove room 14 22
+
+escaper order escaper2@gmail.com 10 14 0-10 3
+escaper order escaper2@gmail.com 10 14 0-11 3
+escaper order escaper2@gmail.com 10 14 0-12 3
+escaper order escaper2@gmail.com 10 14 0-13 3
+
+####1 bad line - invalid parameters
+escaper remove escaper2gmail.com
+
+####1 bad line - client does not exist
+escaper remove escaper100@gmail.com
+
+escaper remove escaper2@gmail.com
+
+report day
+report best
+
+### end ###

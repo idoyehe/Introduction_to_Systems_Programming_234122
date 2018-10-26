@@ -1,0 +1,17 @@
+Ido's_System
+8
+challenge_4  44  1
+WILL_BE_CHANGE  33  3
+challenge_2  22  2
+challenge_5  55  3
+challenge_6  66  3
+challenge_1  11  1
+challenge_8  88  2
+challenge_7  77  3
+6
+room_2  1  22
+room_1  3  11  44  66
+room_3  3  55  33  11
+room_4  4  22  44  55  66
+room_5 8 11 22 33 44 55 66 77 88
+WILL_BE_CHANGE 2 77 88

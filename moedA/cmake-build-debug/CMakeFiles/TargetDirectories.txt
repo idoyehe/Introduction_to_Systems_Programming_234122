@@ -1,0 +1,3 @@
+C:/Users/Ido/CLionProjects/moedA/cmake-build-debug/CMakeFiles/moedA.dir
+C:/Users/Ido/CLionProjects/moedA/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Ido/CLionProjects/moedA/cmake-build-debug/CMakeFiles/rebuild_cache.dir

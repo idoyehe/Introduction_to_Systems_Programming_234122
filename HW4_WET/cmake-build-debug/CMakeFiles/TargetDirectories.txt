@@ -1,0 +1,3 @@
+C:/Users/IdoYehe/CLionProjects/MATAM/HW4_WET/cmake-build-debug/CMakeFiles/HW4_WET.dir
+C:/Users/IdoYehe/CLionProjects/MATAM/HW4_WET/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/IdoYehe/CLionProjects/MATAM/HW4_WET/cmake-build-debug/CMakeFiles/rebuild_cache.dir

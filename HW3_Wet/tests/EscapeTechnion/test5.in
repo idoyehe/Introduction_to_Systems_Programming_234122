@@ -1,0 +1,43 @@
+
+
+
+## day 0 ##
+
+escaper add escaper1@gmail.com 13 8
+escaper add escaper2@gmail.com 9 8
+escaper add escaper3@gmail.com 9 8
+
+company add bio1@gmail.com 10
+company add med1@gmail.com 14
+company add civil1@gmail.com 0
+
+room add bio1@gmail.com 11 100 3 06-18 7
+room add bio1@gmail.com 16 100 4 06-18 7
+room add bio1@gmail.com 13 100 4 06-18 7
+
+room add med1@gmail.com 21 100 3 06-18 7
+room add med1@gmail.com 23 100 3 06-18 7
+
+room add civil1@gmail.com 23 500 3 06-18 7
+
+###should get room in med1@gmail.com
+escaper recommend escaper1@gmail.com 3
+
+###should get room in bio1@gmail.com
+escaper recommend escaper2@gmail.com 3
+
+escaper recommend escaper3@gmail.com 4
+escaper recommend escaper2@gmail.com 3
+
+escaper recommend escaper1@gmail.com 3
+escaper recommend escaper1@gmail.com 3
+escaper recommend escaper1@gmail.com 1
+
+escaper order escaper3@gmail.com 0 23 0-15 2
+
+report day
+report best
+report day
+report best
+
+### end ###

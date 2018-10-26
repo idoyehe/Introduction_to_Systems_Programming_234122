@@ -1,0 +1,2 @@
+ToolSet: 3.20@C:\TDM-GCC-32
+CMake: 3.6.3@C:\Program Files (x86)\JetBrains\CLion 2016.3.4\bin\cmake\bin\cmake.exe

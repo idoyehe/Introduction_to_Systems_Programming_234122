@@ -1,0 +1,3 @@
+C:/Users/Ido/CLionProjects/HW3_Wet/cmake-build-debug/CMakeFiles/HW3_Wet.dir
+C:/Users/Ido/CLionProjects/HW3_Wet/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Ido/CLionProjects/HW3_Wet/cmake-build-debug/CMakeFiles/rebuild_cache.dir

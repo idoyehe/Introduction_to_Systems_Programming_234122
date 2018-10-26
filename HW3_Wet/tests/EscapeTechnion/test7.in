@@ -1,0 +1,128 @@
+
+## checking invalid parameters - 30 lines ##
+
+company add civil1gmail.com 0
+company add civil1@gmail.com -1
+company add civil1@gmail.com 20
+company remove civil1gmail.com
+room add civil1gmail.com 11 4 10 09-21 3
+room add civil1@gmail.com -11 4 10 09-21 3
+room add civil1@gmail.com 11 5 10 09-21 3
+room add civil1@gmail.com 11 4 -10 09-21 3
+room add civil1@gmail.com 11 4 10 25-21 3
+room add civil1@gmail.com 11 4 10 09-25 3
+room add civil1@gmail.com 11 4 10 22-21 3
+room add civil1@gmail.com 11 4 10 09-21 -3
+room add civil1@gmail.com 11 4 10 09-21 11
+room remove -1 11
+room remove 20 11
+room remove 3 -11
+escaper add civil1gmail.com 2 2
+escaper add civil1@gmail.com -2 2
+escaper add civil1@gmail.com 20 2
+escaper add civil1@gmail.com 2 -2
+escaper add civil1@gmail.com 2 12
+escaper remove civil1gmail.com
+escaper order civil1gmail.com 2 11 0-10 5
+escaper order civil1@gmail.com -2 11 0-10 5
+escaper order civil1@gmail.com 20 11 0-10 5
+escaper order civil1@gmail.com 2 -11 0-10 5
+escaper order civil1@gmail.com 2 11 0-24 5
+escaper order civil1@gmail.com 2 11 0-10 -5
+escaper recommend civil1gmail.com 5
+escaper recommend civil1@gmail.com -5
+
+## ID does not exist - 1 line##
+room remove 1 11
+
+## EMAIL does not exist - 3 line##
+company remove civil1@gmail.com
+escaper order civil1@gmail.com 2 11 0-10 5
+escaper recommend civil1@gmail.com 2 
+
+escaper add escaper_civil1@gmail.com 0 2
+
+## NO ROOMS AVAILABLE  - 1 line##
+escaper recommend escaper_civil1@gmail.com 2 
+
+company add civil1@gmail.com 0
+company add civil2@gmail.com 0
+company add bio_med1@gmail.com 17
+
+## NO ROOMS AVAILABLE  - 1 line##
+escaper recommend escaper_civil1@gmail.com 2 
+
+## ID does not exist - 1 line##
+room remove 0 11
+
+## EMAIL exist - 1 line##
+company add bio_med1@gmail.com 17
+
+company remove civil1@gmail.com 
+company remove bio_med1@gmail.com
+
+## EMAIL does not exist - 2 lines##
+company remove civil1@gmail.com 
+company remove bio_med1@gmail.com
+
+## EMAIL does not exist - 2 lines##
+room add civil1@gmail.com 11 4 5 09-19 5
+
+company add civil1@gmail.com 0
+company add bio_med1@gmail.com 17
+room add civil1@gmail.com 11 4 5 09-19 5
+room add civil1@gmail.com 12 4 5 09-19 5
+room add civil2@gmail.com 22 4 5 09-19 5
+room add bio_med1@gmail.com 11 4 5 09-19 5
+room add bio_med1@gmail.com 12 4 5 09-19 5
+
+## ID already exists - 2 lines##
+room add bio_med1@gmail.com 12 4 5 09-19 5
+room add civil2@gmail.com 11 4 5 09-19 5
+
+## ID does not exist - 1 line##
+room remove 17 22
+
+## EMAIL exist - 1 line##
+escaper add escaper_civil1@gmail.com 0 2
+
+escaper add escaper_civil2@gmail.com 0 2
+escaper add escaper_cs1@gmail.com 13 2
+ 
+## EMAIL does not exist - 1 line##
+escaper order escaper_civil55@gmail.com 0 11 0-10 5
+
+## ID does not exist - 1 line##
+escaper order escaper_civil1@gmail.com 0 13 0-10 5
+
+escaper order escaper_civil1@gmail.com 0 11 0-10 5
+escaper order escaper_cs1@gmail.com 17 11 0-10 5
+
+## CLIENT IN ROOM - 1 line ##
+escaper order escaper_civil1@gmail.com 0 11 0-10 5
+
+## ROOM NOT AVAILABLE - 4 lines ##
+escaper order escaper_civil2@gmail.com 0 11 0-10 5
+escaper order escaper_cs1@gmail.com 0 11 0-20 5
+escaper order escaper_cs1@gmail.com 0 11 2-20 5
+
+escaper remove escaper_civil1@gmail.com
+
+## EMAIL does not exist - 1 line##
+escaper remove escaper_civil1@gmail.com
+
+escaper order escaper_civil2@gmail.com 0 11 0-10 5
+escaper order escaper_cs1@gmail.com 0 11 1-18 5
+
+## RESERVATION EXIST exist - 2 lines##
+room remove 0 11
+company remove civil1@gmail.com
+
+report day
+report best
+
+escaper remove escaper_cs1@gmail.com
+
+report day
+
+### end ###

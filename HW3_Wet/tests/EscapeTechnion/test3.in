@@ -1,0 +1,59 @@
+# Michal & Amit test 1
+
+company add rnd@apple.com 13
+company add rnd@google.com 5
+company add rnd@qualcomm.com 3
+company add rnd@microsoft.com 13
+company add rnd@refael.com 2
+# random comment
+room add rnd@apple.com 1 100 3 06-18 1
+room add rnd@google.com 2 120 4 10-23 3
+room add rnd@google.com 1 240 6 13-19 10
+room add rnd@microsoft.com 3 160 2 11-14 5
+room add rnd@apple.com 2 200 4 09-20 7
+
+escaper add esc1@g.com 13 4
+escaper add esc2@g.com 13 6
+escaper add esc3@g.com 13 10
+escaper add esc4@g.com 13 6
+escaper add esc5@g.com 1 8
+escaper add esc6@g.com 5 8
+escaper add esc7@g.com 6 7
+escaper add esc8@g.com 7 4
+
+escaper order esc1@g.com 13 1 0-10 4
+escaper order esc7@g.com 5 1 0-13 3
+escaper recommend esc6@g.com 5
+escaper order esc2@g.com 13 3 2-13 3
+escaper order esc2@g.com 13 1 1-10 3
+
+report best
+
+report day
+escaper order esc8@g.com 13 2 0-17 4
+report best
+escaper recommend esc3@g.com 3
+report day
+report day
+report best
+
+escaper remove esc1@g.com
+escaper remove esc2@g.com
+escaper remove esc3@g.com
+escaper remove esc4@g.com
+escaper remove esc5@g.com
+escaper remove esc6@g.com
+escaper remove esc7@g.com
+escaper remove esc8@g.com
+
+room remove 13 1
+room remove 13 2
+room remove 13 3
+room remove 5 1
+room remove 5 2
+
+company remove rnd@apple.com
+company remove rnd@google.com
+company remove rnd@qualcomm.com
+company remove rnd@microsoft.com
+company remove rnd@refael.com

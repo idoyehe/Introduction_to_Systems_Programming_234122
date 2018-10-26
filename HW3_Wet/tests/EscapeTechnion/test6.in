@@ -1,0 +1,17 @@
+report day
+report best
+
+company remove bio4@gmail.com
+room remove 9 -33
+room remove 9 33
+room remove 1 33
+escaper remove escaper2@gmail.com
+
+escaper add escaper1@gmail.com 3 5
+
+escaper recommend escaper1@gmail.com 12
+
+report day
+report best
+
+### end ###

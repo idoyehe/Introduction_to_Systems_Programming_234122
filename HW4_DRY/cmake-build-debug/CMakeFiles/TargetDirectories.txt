@@ -1,0 +1,3 @@
+C:/Users/Ido/CLionProjects/HW4_DRY/cmake-build-debug/CMakeFiles/HW4_WET.dir
+C:/Users/Ido/CLionProjects/HW4_DRY/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Ido/CLionProjects/HW4_DRY/cmake-build-debug/CMakeFiles/rebuild_cache.dir

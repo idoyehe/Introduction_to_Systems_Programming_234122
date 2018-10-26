@@ -1,0 +1,43 @@
+The system is: Windows - 6.1.7601 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/TDM-GCC-64/bin/gcc.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "C:/Users/Ido/CLionProjects/HW3_Dry/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdC/a.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/TDM-GCC-64/bin/g++.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is GNU, found in "C:/Users/Ido/CLionProjects/HW3_Dry/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdCXX/a.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/Ido/CLionProjects/HW3_Dry/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTC_cff68/fast"
+C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTC_cff68.dir\build.make CMakeFiles/cmTC_cff68.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Ido/CLionProjects/HW3_Dry/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cff68.dir/testCCompiler.c.obj
+C:\TDM-GCC-64\bin\gcc.exe     -o CMakeFiles\cmTC_cff68.dir\testCCompiler.c.obj   -c C:\Users\Ido\CLionProjects\HW3_Dry\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_cff68.exe
+"C:\Program Files (x86)\JetBrains\CLion 2016.3.4\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_cff68.dir\link.txt --verbose=1
+"C:\Program Files (x86)\JetBrains\CLion 2016.3.4\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_cff68.dir/objects.a
+C:\TDM-GCC-64\bin\ar.exe cr CMakeFiles\cmTC_cff68.dir/objects.a @CMakeFiles\cmTC_cff68.dir\objects1.rsp
+C:\TDM-GCC-64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_cff68.dir/objects.a -Wl,--no-whole-archive  -o cmTC_cff68.exe -Wl,--out-implib,libcmTC_cff68.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_cff68.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Ido/CLionProjects/HW3_Dry/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
